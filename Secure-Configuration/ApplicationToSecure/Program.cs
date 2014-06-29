@@ -11,8 +11,17 @@ namespace ApplicationToSecure
     {
         static void Main(string[] args)
         {
-            var connection = ConfigurationManager.ConnectionStrings;
-            Console.WriteLine(connection);
+            var connections = ConfigurationManager.ConnectionStrings;
+            var count = 1;
+            
+            foreach(var connection in connections)
+            {
+                Console.WriteLine(count + ": \t" + connection);
+                Console.WriteLine();
+                count++;
+            }
+
+            Console.ReadLine();
         }
     }
 }
