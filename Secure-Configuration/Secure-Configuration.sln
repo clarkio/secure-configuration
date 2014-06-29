@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationToSecure", "ApplicationToSecure\ApplicationToSecure.csproj", "{2B9F7FDB-FF77-44A7-8CCD-A1FFFFB8B7B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption.Utility", "Encryption.Utility\Encryption.Utility.csproj", "{B41EA264-7BF9-446C-A03D-1E2FD5FE39CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{2C5E3066-4F95-44EB-86E4-D086FDC5333F}"
+	ProjectSection(SolutionItems) = preProject
+		TripleDESProtectedConfigurationProvider.dll = TripleDESProtectedConfigurationProvider.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

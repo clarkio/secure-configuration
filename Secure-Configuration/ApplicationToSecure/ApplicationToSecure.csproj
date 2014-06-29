@@ -40,9 +40,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="TripleDESProtectedConfigurationProvider, Version=0.0.0.0, Culture=neutral, PublicKeyToken=06b740a6aaa9c9b0, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\TripleDESProtectedConfigurationProvider.dll</HintPath>
+    <Reference Include="TripleDESProtectedConfigurationProvider">
+      <HintPath>..\TripleDESProtectedConfigurationProvider.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
