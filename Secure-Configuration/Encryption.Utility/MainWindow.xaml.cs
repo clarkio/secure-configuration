@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Samples.AspNet.ProtectedConfiguration;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,22 @@ namespace Encryption.Utility
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Browse_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Encrypt_Click(object sender, RoutedEventArgs e)
+        {
+            EncryptionUtility.EncryptConnectionStringsSection(InputFileTextBox.Text);
+        }
+
+        private void CreateKey_Click(object sender, RoutedEventArgs e)
+        {
+            TripleDESProtectedConfigurationProvider provider = new TripleDESProtectedConfigurationProvider();
+            provider.CreateKey(@"..\..\Keys\keys.txt");
         }
     }
 }
